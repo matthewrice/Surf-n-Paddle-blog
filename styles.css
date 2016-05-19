@@ -1,0 +1,42 @@
+html{
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3{
+  font-family: "Oswald", sans-serif;
+}
+
+header{
+  background: #FFF url('http://unsplash.it/1300/250') no-repeat;
+  background-size: cover;
+  height: 523px;
+  position: relative; /*for absolutely positioned children*/
+}
+
+header:before{
+  content: "";
+  position: absolute;   /*allows me to stretch the image across the entire screen*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(16, 98, 170, 0.8)
+}
+
+header nav,
+header h1,
+header h3{
+  position: relative;
+}
+
+header h1,
+header h3{
+  text-align: center;
+}
