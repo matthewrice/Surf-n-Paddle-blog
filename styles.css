@@ -14,7 +14,7 @@ h3{
 }
 
 header{
-  background: #FFF url('http://unsplash.it/1300/250') no-repeat;
+  background: #FFF url('https://images.unsplash.com/photo-1452723312111-3a7d0db0e024?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=774e99d16e3f3f0e4138be9d98e4f0f9') no-repeat;
   background-size: cover;
   height: 523px;
   position: relative; /*for absolutely positioned children*/
@@ -40,3 +40,75 @@ header h1,
 header h3{
   text-align: center;
 }
+
+header h1{
+  text-transform: uppercase;
+  top: 216px;
+  font-size: 87px;
+  letter-spacing: 15px;
+}
+
+header h3{
+  top: 228px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  left: -3px;
+}
+
+/*
+ * NAV CONTAINER  --> contains branding and utility-nav
+ */
+
+nav{
+  position: relative;
+  padding-left: 134px;
+  padding-right: 156px;
+  padding-top: 4px;
+}
+
+.branding{
+  display: inline-block;
+  position: absolute;
+}
+
+.logo-title{
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  left: 61px;
+  bottom: 20px;
+  text-transform: uppercase;
+}
+
+.utility-nav{
+  display: inline-block;
+  position: absolute;
+  left: 986px;
+  top: 11px;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.utility-nav a{
+  /*display: inline-block;*/
+  /*position: absolute;*/
+  text-decoration: none;
+  color: rgb(0,51,82);
+}
+
+.search-icon{
+  display: inline-block;
+  position: absolute;
+  margin: 0 auto;
+  height: 23.64px;
+  bottom: 1px;
+}
+
+
+.clear-fix{       /*clears any floats for following elements*/
+  clear: both;
+}
+
+/*
+ * ARTICLE CONTAINER
+ */
