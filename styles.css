@@ -110,5 +110,63 @@ nav{
 }
 
 /*
- * ARTICLE CONTAINER
+ * START OF SECTION CONTAINER. CONTAINS ARTICLE & ASIDE.
  */
+
+ section{
+   max-width: 1300px;
+   margin: 0 auto;
+   height: 1007px;
+ }
+
+/*
+ * START OF ARTICLE CONTAINER.
+ */
+
+ article{
+   width: 615px;
+   margin-left: 162px;
+   float: left;
+ }
+
+.article-image{
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+}
+
+ /*
+  * START OF ASIDE CONTAINER.
+  */
+
+aside{
+  /*display: inline-block;
+  position: absolute;*/
+  width: 280px;
+  float: right;
+  margin-right: 160px;
+}
+
+.aside-image{
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+}
+
+.paddleboard{
+  display: block;
+  position: absolute;
+  width: 279px;
+  height: 300px;
+}
+
+.paddleboard:after{
+  content: "";
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(50, 141, 200, 0.8);
+}
