@@ -110,13 +110,13 @@ nav{
 }
 
 /*
- * START OF SECTION CONTAINER. CONTAINS ARTICLE & ASIDE.
+ * START OF WEBPAGE CONTAINER. CONTAINS ARTICLE & ASIDE.
  */
 
- section{
+ .webpage{
    max-width: 1300px;
    margin: 0 auto;
-   height: 1007px;
+   padding-top: 64px;
  }
 
 /*
@@ -124,9 +124,20 @@ nav{
  */
 
  article{
-   width: 615px;
-   margin-left: 162px;
+   position: absolute;
+   width: 610px;
+   left: 160px;
    float: left;
+ }
+
+ .engaging-headline{
+   text-align: justify;
+   font-size: 65px;
+   line-height: 72px;
+ }
+
+ .author-info{
+   margin-bottom: 33px;
  }
 
 .article-image{
@@ -135,29 +146,167 @@ nav{
   height: 22px;
 }
 
+.paragraph p{
+  font-size: 19px;
+}
+
+.filter{
+  margin-bottom: 31px;
+  line-height: 26px;
+}
+
+.tart{
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.woah-exclamation{
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: rgb(0, 104, 182);
+  padding-left: 15px;
+  padding-top: 19px;
+  padding-bottom: 7px;
+  border-left: 2px solid rgb(211, 211, 211);
+  left: 4px;
+  margin-bottom: 31px;
+}
+
+.witch{
+  line-height: 26px;
+  margin-bottom: 31px;
+}
+
+.michael{
+  line-height: 25px;
+  margin-bottom: 18px;
+}
+
+/*
+ * BUTTON CONTAINER
+ */
+
+.buttons a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.comment{
+  /*position: absolute;*/
+  /*width: 158px;*/
+  /*height: 50px;*/
+}
+
+.comment i{
+  position: relative;
+  background-color: rgb(91, 103, 111);
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  padding: 7px;
+}
+
+.comment a{
+  position: relative;
+  background-color: rgb(160, 179, 192);
+  padding: 6px 10px 6px 9px;
+  left: -4px;
+  top: -1px;
+}
+
+.upload i{
+  background-color: rgb(92, 104, 112);
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-size: 18px;
+  padding: 7px;
+  margin-left: 4px;
+}
+
+.upload a{
+  background-color: rgb(160, 179, 192);
+  position: relative;
+  padding: 6px 14px 6px 12px;
+  left: -4px;
+  top: -1px;
+}
+
+.share i{
+  background-color: rgb(0, 50, 83);
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-size: 18px;
+  padding: 7px;
+  margin-left: 2px;
+}
+
+.share a{
+  background-color: rgb(0, 104, 182);
+  position: relative;
+  padding: 6px 13px 6px 11px;
+  left: -4px;
+  top: -1px;
+}
+
  /*
   * START OF ASIDE CONTAINER.
   */
 
 aside{
-  /*display: inline-block;
-  position: absolute;*/
+  position: absolute;
+  box-sizing: border-box;
   width: 280px;
+  right: 160px;
   float: right;
-  margin-right: 160px;
+  padding-top: 14px;
+}
+
+.author-social{
+  position: relative;
+  height: 131px;
 }
 
 .aside-image{
   border-radius: 50%;
   width: 85px;
   height: 85px;
+  margin-left: 91px;
+}
+
+.aside-name{
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  margin-right: 9px;
+  text-transform: uppercase;
+  color: rgb(0, 104, 182);
+}
+
+.social{
+  margin-bottom: 52px;
+}
+
+.social a{
+  color: rgb(160, 179, 192);
+  text-decoration: none;
+}
+
+.twitter{
+  margin-left: 38px;
+}
+
+.facebook{
+  margin-left: 9px;
+}
+
+.instagram{
+  margin-left: 9px;
 }
 
 .paddleboard{
-  display: block;
-  position: absolute;
   width: 279px;
   height: 300px;
+  margin-bottom: 9px;
 }
 
 .paddleboard:after{
@@ -170,3 +319,32 @@ aside{
   right: 0;
   background-color: rgba(50, 141, 200, 0.8);
 }
+
+.ad{
+  margin-bottom: 45px;
+  text-align: right;
+}
+
+.ad a{
+  color: rgb(160, 179, 192);
+}
+
+h4{
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgb(0, 104, 182);
+}
+
+.note{
+  width: 280px;
+  line-height: 24px;
+}
+
+.clear-fix{       /*clears any floats for following elements*/
+  clear: both;
+}
+
+/*
+ * BEGINNING OF POPULAR POSTS
+ */
